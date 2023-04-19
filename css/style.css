@@ -815,8 +815,17 @@ a:focus {
   width: 50%;
   padding-right: 15px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
-#skills .left:after {
+.dot{
+  color:  var(--pc);
+  font-weight: bold;
+  
+}
+/* #skills .left:after {
   width: 10px;
   height: 10px;
   content: "";
@@ -825,7 +834,7 @@ a:focus {
   left: 0;
   border-radius: 50%;
   background-color: var(--pc);
-}
+} */
 #skills .left p {
   margin: 0;
   padding-left: 15px;
