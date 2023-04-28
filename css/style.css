@@ -42,7 +42,8 @@
 /*	01) Base CSS
 /*------------------------------------------------------------------*/
 :root {
-  --pc: #dd1c63;
+  /* --pc: #dd1c63; */
+  --pc: #04EDED;
   --hff: "Nunito Sans", sans-serif;
   --bff: "Mulish", Arial, Helvetica, sans-serif;
 }
