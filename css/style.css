@@ -63,6 +63,9 @@ body {
 
   word-break: break-word;
 }
+.img__flag__experience{
+  width: 30px;
+}
 .svg {
   fill: currentcolor;
   width: 20px;
@@ -1842,7 +1845,7 @@ a:focus {
   width: 50%;
   padding-left: 30px;
 }
-#send_message {
+#send_message__form {
   display: inline-block;
   text-decoration: none;
   line-height: 46px;
@@ -1857,7 +1860,7 @@ a:focus {
   outline: none;
   border: 2px solid transparent;
 }
-#send_message:focus {
+#send_message__form:focus {
   border-color: var(--pc);
 }
 /*------------------------------------------------------------------*/
