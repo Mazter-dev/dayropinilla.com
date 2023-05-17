@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 /*
 /*	Copyright (c) 
 /*	Author
@@ -47,11 +48,13 @@
   --hff: "Nunito Sans", sans-serif;
   --bff: "Mulish", Arial, Helvetica, sans-serif;
 }
+
 html {
   overflow-x: hidden;
   padding: 0px;
   margin: 0px;
 }
+
 body {
   font-family: var(--bff);
   font-size: 16px;
@@ -63,14 +66,17 @@ body {
 
   word-break: break-word;
 }
-.img__flag__experience{
+
+.img__flag__experience {
   width: 30px;
 }
+
 .svg {
   fill: currentcolor;
   width: 20px;
   height: 20px;
 }
+
 h1,
 h2,
 h3,
@@ -82,41 +88,49 @@ h6 {
   font-family: var(--hff);
   color: #e4e4e4;
 }
-h1 > a,
-h2 > a,
-h3 > a,
-h4 > a,
-h5 > a,
-h6 > a {
+
+h1>a,
+h2>a,
+h3>a,
+h4>a,
+h5>a,
+h6>a {
   color: #e4e4e4;
 }
-h1 > a:hover,
-h2 > a:hover,
-h3 > a:hover,
-h4 > a:hover,
-h5 > a:hover,
-h6 > a:hover {
+
+h1>a:hover,
+h2>a:hover,
+h3>a:hover,
+h4>a:hover,
+h5>a:hover,
+h6>a:hover {
   color: var(--pc);
 }
+
 input {
   font-family: "Jost";
 }
+
 p {
   letter-spacing: 0;
 }
+
 a:focus {
   outline: none;
 }
+
 @media (max-width: 1200px) {
   body {
     overflow-x: hidden;
   }
 }
+
 @media (max-width: 1040px) {
   .container {
     padding: 0 20px;
   }
 }
+
 @media (max-width: 480px) {
   .container {
     padding: 0 10px;
@@ -132,6 +146,7 @@ a:focus {
   z-index: 99999;
   display: flex;
 }
+
 #preloader:before,
 #preloader:after {
   content: "";
@@ -146,10 +161,12 @@ a:focus {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
 #preloader:after {
   left: auto;
   right: 0;
 }
+
 #preloader .loader_line {
   margin: auto;
   width: 1px;
@@ -160,6 +177,7 @@ a:focus {
   -o-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
 }
+
 .loader_line:before {
   content: "";
   position: absolute;
@@ -176,6 +194,7 @@ a:focus {
   -o-animation: lineheight 1000ms ease-in-out 0s forwards;
   animation: lineheight 1000ms ease-in-out 0s forwards;
 }
+
 .loader_line:after {
   content: "";
   position: absolute;
@@ -198,6 +217,7 @@ a:focus {
   0% {
     height: 0%;
   }
+
   100% {
     height: 100%;
   }
@@ -210,6 +230,7 @@ a:focus {
     -o-transform: translateY(-100%);
     transform: translateY(-100%);
   }
+
   100% {
     -webkit-transform: translateY(200%);
     -ms-transform: translateY(200%);
@@ -222,24 +243,29 @@ a:focus {
 .preloaded .loader_line:after {
   opacity: 0;
 }
+
 .preloaded .loader_line {
   opacity: 0;
   height: 100% !important;
 }
+
 .preloaded:before,
 .preloaded:after {
   -webkit-animation: preloadedzero 300ms ease-in-out 500ms forwards;
   -o-animation: preloadedzero 300ms ease-in-out 500ms forwards;
   animation: preloadedzero 300ms ease-in-out 500ms forwards;
 }
+
 @keyframes preloadedzero {
   0% {
     width: 50%;
   }
+
   100% {
     width: 0%;
   }
 }
+
 /*------------------------------------------------------------------*/
 /*	02) Main
 /*------------------------------------------------------------------*/
@@ -249,6 +275,7 @@ a:focus {
 .barna__wrapper * {
   box-sizing: border-box;
 }
+
 .barna__wrapper {
   width: 100%;
   float: left;
@@ -257,16 +284,19 @@ a:focus {
   position: relative;
   overflow: hidden;
 }
+
 .barna__wrapper:after {
   clear: both;
   display: table;
   content: "";
 }
+
 .barna__wrapper .main {
   width: 100%;
   float: left;
   clear: both;
 }
+
 /*------------------------------------------------------------------*/
 /*	03) Header
 /*------------------------------------------------------------------*/
@@ -285,16 +315,24 @@ a:focus {
   background-color: transparent;
   transition: all 0.3s ease;
 }
+
 #header.scrolled {
   background-color: #000;
   padding: 20px 40px;
 }
+
 .logo {
   margin-right: 40px;
 }
+
+.logo__img {
+  width: 100px;
+}
+
 .social {
   margin-left: 40px;
 }
+
 .nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -303,11 +341,13 @@ a:focus {
   list-style-type: none;
   margin-left: -50px;
 }
+
 .nav li {
   margin: 0;
   padding: 0;
   margin-left: 50px;
 }
+
 .nav a {
   font-family: var(--hff);
   text-decoration: none;
@@ -317,6 +357,7 @@ a:focus {
   color: #e4e4e4;
   position: relative;
 }
+
 .nav a:before {
   left: 6px;
   bottom: -1px;
@@ -328,11 +369,13 @@ a:focus {
   margin-right: 6px;
   transition: all 0.5s ease;
 }
+
 .nav li.current a:before,
 .nav a:hover:before {
   right: -8px;
   margin-right: 0;
 }
+
 .social ul {
   display: flex;
   flex-wrap: wrap;
@@ -341,24 +384,29 @@ a:focus {
   list-style-type: none;
   margin-left: -17px;
 }
+
 .social li {
   margin: 5px 0;
   padding: 0;
   margin-left: 17px;
 }
+
 .social .svg {
   width: 17px;
   height: 17px;
   display: block;
 }
+
 .social a {
   display: block;
   text-decoration: none;
   color: #e4e4e4;
 }
+
 .social a:hover {
   color: var(--pc);
 }
+
 /*------------------------------------------------------------------*/
 /*	04) Hero Header (element)
 /*------------------------------------------------------------------*/
@@ -368,6 +416,7 @@ a:focus {
   position: relative;
   clear: both;
 }
+
 .barna__hero .item {
   min-height: 100vh;
   padding: 170px 0 270px;
@@ -376,6 +425,7 @@ a:focus {
   justify-content: center;
   position: relative;
 }
+
 .barna__hero .bg {
   position: absolute;
   z-index: 1;
@@ -385,6 +435,7 @@ a:focus {
   bottom: 0;
   overflow: hidden;
 }
+
 .barna__hero .bg1 {
   top: 0;
   left: 0;
@@ -397,6 +448,7 @@ a:focus {
   transition: all 1s 1s ease;
   background-color: #000;
 }
+
 .barna__hero .bg2 {
   top: 0;
   right: 0;
@@ -413,10 +465,7 @@ a:focus {
   width: 31%;
   left: -31%;
 }
-.barna__hero .bg2 {
-  width: 69%;
-  right: -69%;
-}
+
 .barna__hero .active .bg1 {
   left: 0;
 }
@@ -430,10 +479,12 @@ a:focus {
   margin-bottom: 32px;
   letter-spacing: 2px;
 }
+
 .barna__hero .item p span {
   position: relative;
   padding-bottom: 1px;
 }
+
 .barna__hero .item p span:after {
   left: 6px;
   bottom: -1px;
@@ -445,6 +496,7 @@ a:focus {
   margin-right: 6px;
   transition: all 1s 1s ease;
 }
+
 .barna__hero .item h3 {
   margin: 0;
   padding: 0;
@@ -454,6 +506,7 @@ a:focus {
   font-family: var(--bff);
   margin-bottom: 30px;
 }
+
 .barna__hero .item h5 {
   margin: 0;
   padding: 0;
@@ -463,10 +516,12 @@ a:focus {
   font-family: var(--bff);
   color: var(--pc);
 }
+
 .barna__hero .title_holder {
   position: relative;
   padding-bottom: 24px;
 }
+
 .barna__hero .title_holder:after {
   content: "";
   position: absolute;
@@ -475,6 +530,7 @@ a:focus {
   height: 1px;
   background-color: #e4e4e4;
 }
+
 .barna__hero .divider {
   display: block;
   position: absolute;
@@ -487,6 +543,7 @@ a:focus {
   border-radius: 22px;
   overflow: hidden;
 }
+
 .barna__hero .divider:after {
   content: "";
   position: absolute;
@@ -499,9 +556,11 @@ a:focus {
   background-color: var(--pc);
   transition: all 1s 1s ease;
 }
+
 .barna__hero .active .divider:after {
   transform: translateY(0%);
 }
+
 .barna__hero .my__nav a {
   position: absolute;
   width: 50px;
@@ -516,6 +575,7 @@ a:focus {
   color: #b3b3b3;
   transition: all 0.3s;
 }
+
 .barna__hero .my__nav a:hover {
   background-color: #444;
 }
@@ -528,19 +588,24 @@ a:focus {
   left: 50%;
   margin: -5px 0 0 -5px;
 }
+
 .barna__hero .my__nav .prev {
   left: 40px;
 }
+
 .barna__hero .my__nav .next {
   right: 40px;
 }
+
 .barna__hero .my__nav .next .svg {
   transform: rotate(180deg);
 }
+
 .barna__hero .active .item p span:after {
   right: -8px;
   margin-right: 0;
 }
+
 /*------------------------------------------------------------------*/
 /*	05) Section About
 /*------------------------------------------------------------------*/
@@ -550,6 +615,7 @@ a:focus {
   z-index: 3;
   padding-bottom: 150px;
 }
+
 /*------------------------------------------------------------------*/
 /*	06) Partners (element)
 /*------------------------------------------------------------------*/
@@ -558,12 +624,14 @@ a:focus {
   position: relative;
   transform: translateY(-50%);
 }
+
 .barna__partners .in {
   width: 100%;
   background-image: url(../img/partners/bg.png);
   background-size: cover;
   background-repeat: repeat;
 }
+
 .barna__partners ul {
   margin: 0;
   padding: 55px 45px;
@@ -573,15 +641,18 @@ a:focus {
   flex-direction: row;
   align-items: center;
 }
+
 .barna__partners li {
   margin: 0;
   width: 25%;
   padding: 15px;
 }
+
 .barna__partners a {
   color: #e4e4e4;
   text-decoration: none;
 }
+
 /*------------------------------------------------------------------*/
 /*	07) Main Title (element)
 /*------------------------------------------------------------------*/
@@ -592,10 +663,12 @@ a:focus {
   margin-bottom: 11px;
   letter-spacing: 2px;
 }
+
 .barna__title p span {
   position: relative;
   padding-bottom: 1px;
 }
+
 .barna__title p span:after {
   left: 6px;
   bottom: -1px;
@@ -605,6 +678,7 @@ a:focus {
   background-color: var(--pc);
   right: -8px;
 }
+
 .barna__title h3 {
   margin: 0;
   padding: 0;
@@ -615,6 +689,7 @@ a:focus {
   position: relative;
   padding-left: 15px;
 }
+
 .barna__title h3:after {
   width: 10px;
   height: 10px;
@@ -625,18 +700,22 @@ a:focus {
   border-radius: 50%;
   background-color: var(--pc);
 }
+
 .barna__title.center {
   text-align: center;
 }
+
 .barna__title.center h3 {
   padding-bottom: 17px;
 }
+
 .barna__title.center h3:after {
   left: 50%;
   margin-left: -5px;
   bottom: 0;
   top: auto;
 }
+
 /*------------------------------------------------------------------*/
 /*	08) About (element)
 /*------------------------------------------------------------------*/
@@ -644,11 +723,13 @@ a:focus {
   display: flex;
   align-items: flex-start;
 }
+
 .barna__about .left {
   width: 38%;
   position: relative;
   padding: 30px 30px 0 0;
 }
+
 .barna__about .left:after {
   content: "";
   position: absolute;
@@ -659,26 +740,32 @@ a:focus {
   left: 30px;
   background-color: #292929;
 }
+
 .barna__about .right {
   width: 62%;
   padding-left: 60px;
 }
+
 .barna__about .barna__title {
   margin-bottom: 12px;
 }
+
 .barna__about .desc p {
   margin: 0;
   padding: 0;
   margin-bottom: 16px;
 }
+
 .barna__about .desc p:last-child {
   margin-bottom: 0;
 }
+
 .barna__about .desc p a {
   color: var(--pc);
   text-decoration: none;
   position: relative;
 }
+
 .barna__about .desc p a:after {
   left: 6px;
   bottom: -1px;
@@ -690,36 +777,44 @@ a:focus {
   margin-right: 6px;
   transition: all 0.5s ease;
 }
+
 .barna__about .desc p a:hover:after {
   right: -8px;
   margin-right: 0;
 }
+
 .barna__about .desc {
   margin-bottom: 24px;
 }
+
 .barna__about .list {
   margin-bottom: 28px;
 }
+
 .barna__about .list ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   margin-left: -20px;
 }
+
 .barna__about .list ul:after {
   content: "";
   display: table;
   clear: both;
 }
+
 .barna__about .list li {
   width: 50%;
   float: left;
   padding-left: 20px;
 }
+
 .barna__about .list .item {
   padding-left: 22px;
   position: relative;
 }
+
 .barna__about .list .svg {
   width: 14px;
   height: 16px;
@@ -729,10 +824,12 @@ a:focus {
   left: 0;
   top: 7px;
 }
+
 .barna__about .list span {
   color: var(--pc);
   margin-right: 7px;
 }
+
 .barna__about .button {
   display: -webkit-flex;
   display: -moz-flex;
@@ -740,6 +837,7 @@ a:focus {
   display: -o-flex;
   display: flex;
 }
+
 .barna__about .button a {
   display: -webkit-flex;
   display: -moz-flex;
@@ -759,6 +857,7 @@ a:focus {
   letter-spacing: 2px;
   outline: none;
 }
+
 .barna__about .button a .text {
   color: var(--pc);
   display: block;
@@ -766,10 +865,12 @@ a:focus {
   overflow: hidden;
   margin-left: 10px;
 }
+
 .barna__about .button a .text span {
   display: block;
   transition: all 0.3s ease;
 }
+
 .barna__about .button a .text span:nth-child(2) {
   position: absolute;
   transform: translateY(102%);
@@ -778,16 +879,20 @@ a:focus {
   top: 0;
   bottom: 0;
 }
+
 .barna__about .button a:hover {
   color: var(--pc);
 }
+
 .barna__about .button a:hover .text span:nth-child(1) {
   transform: translateY(-102%);
 }
+
 .barna__about .button a:hover .text span:nth-child(2) {
   transform: translateY(0%);
   color: #e4e4e4;
 }
+
 /*------------------------------------------------------------------*/
 /*	09) Section Skills
 /*------------------------------------------------------------------*/
@@ -798,6 +903,7 @@ a:focus {
   background-position: center;
   position: relative;
 }
+
 #skills .bg {
   position: absolute;
   top: 0;
@@ -806,6 +912,7 @@ a:focus {
   bottom: 0;
   background-color: rgba(1, 1, 26, 0.5);
 }
+
 #skills .in {
   width: 100%;
   display: -webkit-flex;
@@ -815,6 +922,7 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
 }
+
 #skills .left {
   width: 50%;
   padding-right: 15px;
@@ -824,11 +932,13 @@ a:focus {
   justify-content: center;
   text-decoration: none;
 }
-.dot{
-  color:  var(--pc);
+
+.dot {
+  color: var(--pc);
   font-weight: bold;
-  
+
 }
+
 /* #skills .left:after {
   width: 10px;
   height: 10px;
@@ -848,10 +958,12 @@ a:focus {
   color: #e4e4e4;
   font-weight: 300;
 }
+
 #skills .right {
   width: 50%;
   padding-left: 15px;
 }
+
 /*------------------------------------------------------------------*/
 /*	10) Progress Bar (element)
 /*------------------------------------------------------------------*/
@@ -864,14 +976,17 @@ a:focus {
   padding-bottom: 9px;
   overflow: hidden;
 }
+
 .barna__progress .progress_item:last-child {
   margin-bottom: 0;
 }
+
 .barna__progress .progress_top {
   width: 100%;
   position: relative;
   margin-bottom: 19px;
 }
+
 .barna__progress .progress_percent {
   position: absolute;
   z-index: 2;
@@ -885,6 +1000,7 @@ a:focus {
   color: #fff;
   transition: all 3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
 .barna__progress .progress_title {
   margin: 0;
   font-size: 26px;
@@ -893,6 +1009,7 @@ a:focus {
   z-index: 2;
   line-height: 40px;
 }
+
 .barna__progress .progress_bgwrap {
   width: 100%;
   position: relative;
@@ -900,6 +1017,7 @@ a:focus {
   background-color: #292929;
   border-radius: 16px;
 }
+
 .barna__progress .progress_bg {
   width: 0;
   position: absolute;
@@ -908,6 +1026,7 @@ a:focus {
   left: 0;
   bottom: -1px;
 }
+
 .barna__progress .progress_bg:after {
   content: "";
   position: absolute;
@@ -918,6 +1037,7 @@ a:focus {
   background-color: var(--pc);
   border-radius: 16px;
 }
+
 .barna__progress .progress_bg span {
   width: 10px;
   height: 10px;
@@ -929,6 +1049,7 @@ a:focus {
   border-radius: 50%;
   right: 110%;
 }
+
 .barna__progress .progress_bg span:after {
   content: "";
   position: absolute;
@@ -941,62 +1062,82 @@ a:focus {
   transform: translateY(-50%);
   border-radius: 50%;
 }
+
 .barna__progress .open .progress_bg span {
   right: 4px;
-  -webkit-animation: progress_animation2 3s cubic-bezier(0.165, 0.84, 0.44, 1); /* Safari 4+ */
-  -moz-animation: progress_animation2 3s cubic-bezier(0.165, 0.84, 0.44, 1); /* Fx 5+ */
-  animation: progress_animation2 3s cubic-bezier(0.165, 0.84, 0.44, 1); /* IE 10+ */
+  -webkit-animation: progress_animation2 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  /* Safari 4+ */
+  -moz-animation: progress_animation2 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  /* Fx 5+ */
+  animation: progress_animation2 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  /* IE 10+ */
 }
+
 .barna__progress .open .progress_bg:after {
   right: 25px;
-  -webkit-animation: progress_animation 3s cubic-bezier(0.165, 0.84, 0.44, 1); /* Safari 4+ */
-  -moz-animation: progress_animation 3s cubic-bezier(0.165, 0.84, 0.44, 1); /* Fx 5+ */
-  animation: progress_animation 3s cubic-bezier(0.165, 0.84, 0.44, 1); /* IE 10+ */
+  -webkit-animation: progress_animation 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  /* Safari 4+ */
+  -moz-animation: progress_animation 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  /* Fx 5+ */
+  animation: progress_animation 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  /* IE 10+ */
 }
+
 @-webkit-keyframes progress_animation {
   0% {
     right: 100%;
   }
+
   100% {
     right: 25px;
   }
 }
+
 @-moz-keyframes progress_animation {
   0% {
     right: 100%;
   }
+
   100% {
     right: 25px;
   }
 }
+
 @keyframes progress_animation {
   0% {
     right: 100%;
   }
+
   100% {
     right: 25px;
   }
 }
+
 @-webkit-keyframes progress_animation2 {
   0% {
     right: 100%;
   }
+
   100% {
     right: 4px;
   }
 }
+
 @-moz-keyframes progress_animation2 {
   0% {
     right: 100%;
   }
+
   100% {
     right: 4px;
   }
 }
+
 @keyframes progress_animation2 {
   0% {
     right: 100%;
   }
+
   100% {
     right: 4px;
   }
@@ -1009,6 +1150,7 @@ a:focus {
   padding: 140px 0 101px;
   background-color: #01011a;
 }
+
 /*------------------------------------------------------------------*/
 /*	12) Resume (element)
 /*------------------------------------------------------------------*/
@@ -1017,32 +1159,39 @@ a:focus {
   padding: 0;
   list-style-type: none;
 }
+
 .barna__resume_list .resume_item {
   margin: 0;
   padding: 48px 0 13px;
   border-bottom: 1px solid #292929;
 }
+
 .barna__resume_list .resume_item:first-child {
   padding-top: 42px;
 }
+
 .barna__resume_list .resume_item:last-child {
   border-bottom: none;
 }
+
 .barna__resume_list .item_wrapper {
   margin-left: -50px;
   display: flex;
 }
+
 .barna__resume_list .left {
   width: 25%;
   padding-left: 50px;
   display: flex;
   color: #e4e4e4;
 }
+
 .barna__resume_list .left .svg {
   width: 40px;
   height: 40px;
   margin-right: 10px;
 }
+
 .barna__resume_list .left h3 {
   margin: 0;
   padding: 0;
@@ -1050,10 +1199,12 @@ a:focus {
   line-height: 40px;
   font-weight: 600;
 }
+
 .barna__resume_list .right {
   width: 75%;
   padding-left: 50px;
 }
+
 .barna__resume_list .right ul {
   margin: 0;
   padding: 0;
@@ -1062,6 +1213,7 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
 }
+
 .barna__resume_list .right li {
   margin: 0;
   padding: 0;
@@ -1069,6 +1221,7 @@ a:focus {
   width: 50%;
   margin-bottom: 28px;
 }
+
 .barna__resume_list .item .svg {
   width: 14px;
   height: 14px;
@@ -1076,6 +1229,7 @@ a:focus {
   left: 0;
   top: 8px;
 }
+
 .barna__resume_list .item p {
   margin: 0;
   padding: 0;
@@ -1085,6 +1239,7 @@ a:focus {
   position: relative;
   margin-bottom: 12px;
 }
+
 .barna__resume_list .item h3 {
   margin: 0;
   padding: 0;
@@ -1092,6 +1247,7 @@ a:focus {
   line-height: 40px;
   font-weight: 500;
 }
+
 .barna__resume_list .item h5 {
   margin: 0;
   padding: 0;
@@ -1101,6 +1257,7 @@ a:focus {
   font-family: var(--bff);
   color: var(--pc);
 }
+
 /*------------------------------------------------------------------*/
 /*	13) Section Services
 /*------------------------------------------------------------------*/
@@ -1110,9 +1267,11 @@ a:focus {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 #services .barna__title {
   margin-bottom: 50px;
 }
+
 /*------------------------------------------------------------------*/
 /*	14) Services (element)
 /*------------------------------------------------------------------*/
@@ -1128,6 +1287,7 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
 }
+
 .barna__services li {
   margin: 0;
   padding: 0;
@@ -1136,6 +1296,7 @@ a:focus {
   margin-bottom: 50px;
   text-align: center;
 }
+
 .barna__services .item {
   display: -webkit-flex;
   display: -moz-flex;
@@ -1146,6 +1307,7 @@ a:focus {
   -ms-align-items: center;
   align-items: center;
 }
+
 .barna__services .icon {
   display: -webkit-flex;
   display: -moz-flex;
@@ -1161,11 +1323,13 @@ a:focus {
   background-color: #292929;
   margin-bottom: 35px;
 }
+
 .barna__services .icon .svg {
   width: 45px;
   height: 45px;
   color: #e4e4e4;
 }
+
 .barna__services h3 {
   margin: 0;
   padding: 0 20px;
@@ -1176,6 +1340,7 @@ a:focus {
   position: relative;
   width: 100%;
 }
+
 .barna__services h3 .svg {
   position: absolute;
   z-index: -1;
@@ -1188,14 +1353,17 @@ a:focus {
   transition: all 0.3s ease;
   transform: translate(-50%, -50%);
 }
+
 .barna__services .item:hover h3 .svg {
   opacity: 1;
 }
+
 .barna__services p {
   margin: 0;
   padding: 0;
   font-family: var(--hff);
 }
+
 /*------------------------------------------------------------------*/
 /*	15) Section Portfolio
 /*------------------------------------------------------------------*/
@@ -1205,15 +1373,18 @@ a:focus {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 #portfolio .barna__title {
   margin-bottom: 37px;
 }
+
 /*------------------------------------------------------------------*/
 /*	16) Portfolio (element)
 /*------------------------------------------------------------------*/
 .barna__portfolio .filter {
   margin-bottom: 38px;
 }
+
 .barna__portfolio .filter ul {
   margin: 0;
   padding: 0;
@@ -1228,10 +1399,12 @@ a:focus {
   justify-content: center;
   align-items: center;
 }
+
 .barna__portfolio .filter li {
   padding-left: 50px;
   margin: 2px 0;
 }
+
 .barna__portfolio .filter a {
   text-decoration: none;
   font-size: 14px;
@@ -1241,6 +1414,7 @@ a:focus {
   color: #e4e4e4;
   position: relative;
 }
+
 .barna__portfolio .filter a:after {
   content: "";
   position: absolute;
@@ -1252,10 +1426,12 @@ a:focus {
   background-color: var(--pc);
   transition: all 0.3s ease;
 }
+
 .barna__portfolio .filter a.current:after {
   right: 0;
   margin-right: 0;
 }
+
 .barna__portfolio .list ul {
   margin: 0;
   padding: 0;
@@ -1272,21 +1448,25 @@ a:focus {
   overflow: hidden;
   transition: height 500ms ease;
 }
+
 .barna__portfolio .list li {
   width: 33.3333%;
   padding-left: 30px;
   margin: 0 0 30px 0;
 }
+
 .barna__portfolio .item {
   width: 100%;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
 }
+
 .barna__portfolio .list img {
   opacity: 0;
   min-width: 100%;
 }
+
 .barna__portfolio .main_image {
   top: 0;
   left: 0;
@@ -1298,6 +1478,7 @@ a:focus {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 .barna__portfolio .title_holder {
   position: absolute;
   top: 0;
@@ -1313,6 +1494,7 @@ a:focus {
   transition: all 0.3s ease;
   z-index: 5;
 }
+
 .barna__portfolio .title_holder:after {
   content: "";
   position: absolute;
@@ -1323,10 +1505,12 @@ a:focus {
   background-color: var(--pc);
   opacity: 0.49;
 }
+
 .barna__portfolio .title_holder * {
   position: relative;
   z-index: 2;
 }
+
 .barna__portfolio .title_holder h3 {
   margin: 0;
   padding: 0;
@@ -1335,6 +1519,7 @@ a:focus {
   text-transform: uppercase;
   color: #e4e4e4;
 }
+
 .barna__portfolio .title_holder .icon {
   width: 43px;
   height: 43px;
@@ -1346,14 +1531,17 @@ a:focus {
   justify-content: center;
   margin-bottom: 18px;
 }
+
 .barna__portfolio .title_holder .icon .svg {
   width: 18px;
   height: 18px;
   display: block;
 }
+
 .barna__portfolio .item:hover .title_holder {
   opacity: 1;
 }
+
 .barna__portfolio .zoom {
   z-index: 10;
   position: absolute;
@@ -1362,6 +1550,7 @@ a:focus {
   right: 0;
   bottom: 0;
 }
+
 /*------------------------------------------------------------------*/
 /*	17) Section Counter
 /*------------------------------------------------------------------*/
@@ -1369,6 +1558,7 @@ a:focus {
   padding: 135px 0;
   background-color: #01011a;
 }
+
 /*------------------------------------------------------------------*/
 /*	18) Counter (element)
 /*------------------------------------------------------------------*/
@@ -1386,16 +1576,19 @@ a:focus {
   align-items: center;
   position: relative;
 }
+
 .barna__counters li {
   margin: 0;
   padding: 10px 0 10px 50px;
   width: 33.3333%;
 }
+
 .barna__counters .item {
   width: 100%;
   position: relative;
   padding-left: 60px;
 }
+
 .barna__counters .icon {
   position: absolute;
   width: 50px;
@@ -1417,11 +1610,13 @@ a:focus {
   top: 5px;
   left: 0;
 }
+
 .barna__counters .svg {
   width: 50px;
   height: 50px;
   display: block;
 }
+
 .barna__counters h3 {
   margin: 0;
   padding: 0;
@@ -1429,11 +1624,13 @@ a:focus {
   line-height: 50px;
   letter-spacing: 0.25px;
 }
+
 .barna__counters p {
   color: #b3b3b3;
   margin: 0;
   padding: 0;
 }
+
 /*------------------------------------------------------------------*/
 /*	19) Section Testimonials
 /*------------------------------------------------------------------*/
@@ -1443,15 +1640,18 @@ a:focus {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 #testimonials .barna__title {
   margin-bottom: 50px;
 }
+
 /*------------------------------------------------------------------*/
 /*	20) Testimonials (element)
 /*------------------------------------------------------------------*/
 .barna__testimonials {
   position: relative;
 }
+
 .barna__testimonials .item {
   text-align: center;
   display: -webkit-flex;
@@ -1468,6 +1668,7 @@ a:focus {
   align-items: center;
   justify-content: center;
 }
+
 .barna__testimonials .my__dots .right,
 .barna__testimonials .my__dots .left {
   position: absolute;
@@ -1492,11 +1693,13 @@ a:focus {
   overflow: hidden;
   margin-left: -7px;
 }
+
 .barna__testimonials .my__dots .right {
   left: auto;
   right: 0;
   justify-content: flex-end;
 }
+
 .barna__testimonials .my__dots span {
   width: 10px;
   height: 10px;
@@ -1506,37 +1709,40 @@ a:focus {
   display: block;
   transition: all 0.3s ease;
 }
+
 .barna__testimonials .my__dots .active {
   width: 15px;
   height: 15px;
   background-color: var(--pc);
 }
+
 .barna__testimonials .img_holder {
   width: 90px;
   height: 90px;
   border-radius: 50%;
   margin-bottom: 31px;
 
-  background-image: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background-image: linear-gradient(90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 100%);
 
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 .barna__testimonials p {
   margin: 0;
   padding: 0 15%;
   margin-bottom: 23px;
 }
+
 @media (max-width: 767px) {
   .barna__testimonials p {
     padding: 0;
   }
 }
+
 .barna__testimonials h3 {
   margin: 0;
   padding: 0;
@@ -1544,6 +1750,7 @@ a:focus {
   margin-bottom: 12px;
   font-weight: 500;
 }
+
 .barna__testimonials h5 {
   margin: 0;
   padding: 0;
@@ -1552,6 +1759,7 @@ a:focus {
   font-family: var(--bff);
   margin-bottom: 36px;
 }
+
 .barna__testimonials .icon {
   display: -webkit-flex;
   display: -moz-flex;
@@ -1562,12 +1770,14 @@ a:focus {
   align-items: center;
   justify-content: center;
 }
+
 .barna__testimonials .icon .svg {
   width: 40px;
   height: 40px;
   color: #e4e4e4;
   display: block;
 }
+
 /*------------------------------------------------------------------*/
 /*	21) Section News
 /*------------------------------------------------------------------*/
@@ -1575,15 +1785,18 @@ a:focus {
   padding: 145px 0;
   background-color: #01011a;
 }
+
 #news .barna__title {
   margin-bottom: 50px;
 }
+
 /*------------------------------------------------------------------*/
 /*	22) Blog (element)
 /*------------------------------------------------------------------*/
 .barna__blog .owl-stage-outer {
   margin-bottom: 40px;
 }
+
 .barna__blog .owl-dots {
   margin-left: -7px;
   display: -webkit-flex;
@@ -1596,6 +1809,7 @@ a:focus {
   justify-content: center;
   height: 15px;
 }
+
 .barna__blog .owl-dots .owl-dot span {
   background-color: #b3b3b3;
   margin: 0 0 0 7px;
@@ -1605,26 +1819,31 @@ a:focus {
   border-radius: 50%;
   transition: all 0.3s ease;
 }
+
 .barna__blog .owl-dots .owl-dot.active span {
   width: 15px;
   height: 15px;
 }
+
 .barna__blog .owl-dots .owl-dot.active span,
 .barna__blog .owl-dots .owl-dot:hover span {
   background-color: var(--pc);
 }
+
 .barna__blog .item {
   border-radius: 10px;
   background-color: #292929;
   overflow: hidden;
   cursor: pointer;
 }
+
 .barna__blog .item_top {
   width: 100%;
   border-radius: 0 0 10px 10px;
   position: relative;
   overflow: hidden;
 }
+
 .barna__blog .item_top .main_image {
   position: absolute;
   top: 0;
@@ -1636,13 +1855,16 @@ a:focus {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 .barna__blog .item_top img {
   min-width: 100%;
   opacity: 0;
 }
+
 .barna__blog .item_bottom {
   width: 100%;
 }
+
 .barna__blog .item_title {
   display: -webkit-flex;
   display: -moz-flex;
@@ -1660,6 +1882,7 @@ a:focus {
   padding: 0 30px 21px;
   position: relative;
 }
+
 .barna__blog .item_title:after {
   position: absolute;
   left: 30px;
@@ -1670,6 +1893,7 @@ a:focus {
   height: 1px;
   content: "";
 }
+
 .barna__blog .category {
   display: block;
   text-decoration: none;
@@ -1687,6 +1911,7 @@ a:focus {
   text-transform: uppercase;
   margin-bottom: 21px;
 }
+
 .barna__blog .item_title h3 {
   margin: 0;
   padding: 0;
@@ -1694,11 +1919,13 @@ a:focus {
   line-height: 32px;
   font-weight: 400;
 }
+
 .barna__blog .item_title h3 a {
   text-decoration: none;
   display: block;
   outline: none;
 }
+
 .barna__blog .item_meta {
   display: -webkit-flex;
   display: -moz-flex;
@@ -1713,6 +1940,7 @@ a:focus {
   justify-content: space-between;
   padding: 15px 30px 30px;
 }
+
 .barna__blog .item_meta .main_image {
   width: 33px;
   height: 33px;
@@ -1724,6 +1952,7 @@ a:focus {
   border-radius: 50%;
   margin-right: 7px;
 }
+
 .barna__blog .author {
   display: -webkit-flex;
   display: -moz-flex;
@@ -1738,6 +1967,7 @@ a:focus {
   -ms-align-items: center;
   align-items: center;
 }
+
 .barna__blog .item_meta h5 {
   margin: 0;
   padding: 0;
@@ -1750,6 +1980,7 @@ a:focus {
   color: #a1a1a1;
   font-family: var(--bff);
 }
+
 /*------------------------------------------------------------------*/
 /*	23) Section Contact
 /*------------------------------------------------------------------*/
@@ -1757,9 +1988,11 @@ a:focus {
   background-color: #141414;
   padding: 140px 0;
 }
+
 #contact .barna__title {
   margin-bottom: 50px;
 }
+
 /*------------------------------------------------------------------*/
 /*	24) Contact (element)
 /*------------------------------------------------------------------*/
@@ -1771,10 +2004,12 @@ a:focus {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 .barna__contact .item.nobg {
   background-color: transparent;
   border-radius: 0;
 }
+
 .barna__contact .item {
   margin-bottom: 30px;
   position: relative;
@@ -1782,12 +2017,14 @@ a:focus {
   background-color: #141414;
   border-radius: 25px;
 }
+
 .barna__contact input,
 .barna__contact textarea {
   background-color: transparent;
   position: relative;
   z-index: 3;
 }
+
 .barna__contact .placeholder {
   position: absolute;
   padding: 0 20px;
@@ -1800,12 +2037,14 @@ a:focus {
   border-radius: 25px;
   transition: all 0.3s ease;
 }
+
 .barna__contact .active .placeholder {
   left: 100%;
   transform: translateX(-100%);
   background-color: #000;
   margin-left: -6px;
 }
+
 .barna__contact .info {
   display: -webkit-flex;
   display: -moz-flex;
@@ -1820,7 +2059,8 @@ a:focus {
   align-items: flex-start;
   margin-bottom: 30px;
 }
-.barna__contact .info > * {
+
+.barna__contact .info>* {
   padding: 10px 20px;
   background-color: #141414;
   border-radius: 25px;
@@ -1829,6 +2069,7 @@ a:focus {
   display: none;
   color: var(--pc);
 }
+
 .barna__contact .in {
   display: -webkit-flex;
   display: -moz-flex;
@@ -1837,14 +2078,17 @@ a:focus {
   display: flex;
   margin-left: -30px;
 }
+
 .barna__contact .left {
   width: 50%;
   padding-left: 30px;
 }
+
 .barna__contact .right {
   width: 50%;
   padding-left: 30px;
 }
+
 #send_message__form {
   display: inline-block;
   text-decoration: none;
@@ -1860,9 +2104,11 @@ a:focus {
   outline: none;
   border: 2px solid transparent;
 }
+
 #send_message__form:focus {
   border-color: var(--pc);
 }
+
 /*------------------------------------------------------------------*/
 /*	25) Footer
 /*------------------------------------------------------------------*/
@@ -1872,6 +2118,7 @@ a:focus {
   clear: both;
   background-color: #000000;
 }
+
 #footer .widgets {
   width: 100%;
   float: left;
@@ -1893,6 +2140,7 @@ a:focus {
   align-items: center;
   position: relative;
 }
+
 #footer .widgets .list_item {
   margin: 0;
   padding: 0;
@@ -1900,11 +2148,13 @@ a:focus {
   width: 33.3333%;
   margin-bottom: 55px;
 }
+
 #footer .widgets .item {
   width: 100%;
   position: relative;
   padding-left: 80px;
 }
+
 #footer .widgets .icon {
   width: 50px;
   height: 50px;
@@ -1922,6 +2172,7 @@ a:focus {
   top: 0;
   left: 0;
 }
+
 #footer .widgets h3 {
   margin: 0;
   padding: 0;
@@ -1930,19 +2181,24 @@ a:focus {
   line-height: 1.3;
   margin-bottom: 2px;
 }
+
 #footer .widgets p {
   margin: 0;
   padding: 0;
 }
+
 #footer .social {
   margin-left: 0;
 }
+
 #footer .social a {
   color: #b3b3b3;
 }
+
 #footer .social a:hover {
   color: var(--pc);
 }
+
 #footer .copyright {
   width: 100%;
   float: left;
@@ -1951,17 +2207,20 @@ a:focus {
   text-align: center;
   border-top: 1px solid #292929;
 }
+
 #footer .copyright p {
   margin: 0;
   padding: 0;
   font-size: 16px;
   line-height: 30px;
 }
+
 #footer .copyright a {
   text-decoration: none;
   color: var(--pc);
   position: relative;
 }
+
 #footer .copyright a:after {
   content: "";
   position: absolute;
@@ -1973,10 +2232,12 @@ a:focus {
   background-color: var(--pc);
   transition: all 0.3s ease;
 }
+
 #footer .copyright a:hover:after {
   right: 0;
   margin-right: 0;
 }
+
 /*------------------------------------------------------------------*/
 /*	26) Section's Title
 /*------------------------------------------------------------------*/
@@ -1989,12 +2250,15 @@ a:focus {
   transform: rotate(-90deg);
   transform-origin: top left;
   left: 10px;
-  margin-top: 138px; /* 277(width)/2 */
+  margin-top: 138px;
+  /* 277(width)/2 */
 }
+
 .barna__section_title .title {
   will-change: transform;
   transition: transform 5s cubic-bezier(0, 0, 0, 1) 0s;
 }
+
 .barna__section_title h3 {
   margin: 0;
   padding: 0;
@@ -2004,6 +2268,7 @@ a:focus {
   position: relative;
   z-index: 5;
 }
+
 .barna__section_title .svg {
   position: absolute;
   width: auto;
@@ -2014,13 +2279,16 @@ a:focus {
   left: 0;
   right: 0;
 }
+
 .barna__section_title.right {
   left: auto;
   right: 10px;
   transform: rotate(90deg);
   transform-origin: top right;
-  margin-top: 138px; /* 277(width)/2 */
+  margin-top: 138px;
+  /* 277(width)/2 */
 }
+
 /*------------------------------------------------------------------*/
 /*	27) Mobile Header
 /*------------------------------------------------------------------*/
@@ -2031,6 +2299,7 @@ a:focus {
   z-index: 555;
   background-color: #000;
 }
+
 .barna__mobile_header .header_top {
   display: -webkit-flex;
   display: -moz-flex;
@@ -2049,22 +2318,27 @@ a:focus {
   padding: 20px;
   overflow: hidden;
 }
+
 .barna__mobile_header .header_top a {
   outline: none;
 }
+
 .barna__mobile_header .header_bottom {
   display: none;
   padding: 25px 20px;
   border-top: 1px solid #292929;
 }
+
 .barna__mobile_header .header_bottom ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
+
 .barna__mobile_header .header_bottom li:last-child {
   margin-bottom: 0;
 }
+
 .barna__mobile_header .header_bottom li {
   margin: 0;
   padding: 0;
@@ -2075,6 +2349,7 @@ a:focus {
   display: -o-flex;
   display: flex;
 }
+
 .barna__mobile_header .header_bottom a {
   text-decoration: none;
   position: relative;
@@ -2083,6 +2358,7 @@ a:focus {
   line-height: 1.3;
   font-size: 18px;
 }
+
 .barna__mobile_header .header_bottom a:after {
   left: 6px;
   bottom: -1px;
@@ -2094,6 +2370,7 @@ a:focus {
   margin-right: 6px;
   transition: all 0.3s ease;
 }
+
 .barna__mobile_header .header_bottom li.current a:after,
 .barna__mobile_header .header_bottom a:hover:after {
   right: -8px;
@@ -2107,17 +2384,21 @@ a:focus {
   .barna__hero .my__nav .next {
     right: 20px;
   }
+
   .barna__hero .my__nav .prev {
     left: 20px;
   }
 }
+
 @media (max-width: 1040px) {
   .barna__section_title {
     display: none;
   }
+
   #header {
     display: none;
   }
+
   .barna__mobile_header {
     display: block;
   }
@@ -2133,6 +2414,7 @@ a:focus {
     display: flex;
     column-gap: 10px;
   }
+
   .barna__hero .my__nav a {
     position: relative;
     left: auto !important;
@@ -2143,51 +2425,65 @@ a:focus {
     font-size: 50px;
     line-height: 1.1;
   }
+
   .barna__hero .item h5 {
     font-size: 40px;
   }
+
   .barna__counters li,
   .barna__services li,
   #footer .widgets .list_item,
   .barna__portfolio .list li {
     width: 50%;
   }
+
   .barna__services li {
     padding-left: 50px;
   }
+
   .barna__services ul {
     margin-left: -50px;
   }
+
   .barna__contact {
     padding: 20px;
   }
+
   .barna__contact .item {
     margin-bottom: 20px;
   }
+
   .barna__contact .left,
   .barna__contact .right {
     padding-left: 20px;
   }
+
   .barna__contact .in {
     margin-left: -20px;
   }
+
   textarea {
     height: 120px;
   }
+
   .barna__section_title h3 {
     line-height: 20px;
     font-size: 30px;
   }
+
   .barna__resume_list .left {
     width: 40%;
   }
+
   .barna__resume_list .right {
     width: 60%;
   }
+
   .barna__resume_list .right li {
     width: 100%;
   }
 }
+
 @media (max-width: 768px) {
   .barna__about .in {
     -webkit-flex-direction: column;
@@ -2196,12 +2492,15 @@ a:focus {
     -o-flex-direction: column;
     flex-direction: column;
   }
+
   .barna__partners {
     transform: translateY(-100px);
   }
+
   .barna__partners li {
     width: 50%;
   }
+
   .barna__partners a {
     display: -webkit-flex;
     display: -moz-flex;
@@ -2212,24 +2511,29 @@ a:focus {
     align-items: center;
     justify-content: center;
   }
+
   .barna__about .right {
     width: 100%;
     padding-left: 0;
   }
+
   .barna__about .left {
     width: auto;
     max-width: 100%;
     margin-bottom: 50px;
   }
+
   #skills .left {
     width: 100%;
     padding-right: 0;
     margin-bottom: 30px;
   }
+
   #skills .right {
     width: 100%;
     padding-left: 0;
   }
+
   .barna__resume_list .item_wrapper {
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
@@ -2237,10 +2541,12 @@ a:focus {
     -o-flex-direction: column;
     flex-direction: column;
   }
+
   .barna__resume_list .left {
     width: 100%;
     margin-bottom: 40px;
   }
+
   .barna__resume_list .right,
   .barna__counters li,
   .barna__services li,
@@ -2250,12 +2556,15 @@ a:focus {
   .barna__contact .right {
     width: 100%;
   }
+
   .barna__contact .in {
     flex-wrap: wrap;
   }
+
   .my__container {
     padding: 0;
   }
+
   .barna__testimonials .my__dots {
     margin-top: 30px;
     position: relative;
@@ -2272,6 +2581,7 @@ a:focus {
     flex-direction: row;
     justify-content: space-between;
   }
+
   .barna__testimonials .my__dots .right,
   .barna__testimonials .my__dots .left {
     top: auto;
@@ -2279,13 +2589,16 @@ a:focus {
     position: relative;
   }
 }
+
 @media (max-width: 480px) {
   .barna__about .list li {
     width: 100%;
   }
+
   .barna__partners li {
     width: 100%;
   }
+
   #footer .widgets .item {
     padding-left: 70px;
   }
@@ -2296,24 +2609,30 @@ a:focus {
 .barna_modalbox * {
   box-sizing: border-box;
 }
+
 .barna_modalbox .modal_content {
   scrollbar-width: thin;
   scrollbar-color: #999 #fff;
 }
+
 .barna_modalbox .modal_content::-webkit-scrollbar {
   width: 11px;
 }
+
 .barna_modalbox .modal_content:-webkit-scrollbar-track {
   background: #fff;
 }
+
 .barna_modalbox .modal_content::-webkit-scrollbar-thumb {
   background-color: #999;
   border-radius: 6px;
   border: 3px solid #fff;
 }
+
 .barna_modalbox .fixed_title:empty {
   display: none;
 }
+
 .barna_modalbox .fixed_title {
   margin: 0;
   font-family: "Poppins";
@@ -2330,6 +2649,7 @@ a:focus {
   border-radius: 0 10px 10px 0;
   text-transform: capitalize;
 }
+
 .barna_modalbox .fixed_title span {
   color: #7e7e7e;
   font-family: monospace;
@@ -2337,6 +2657,7 @@ a:focus {
   display: block;
   border-bottom: 1px solid #bfbfbf;
 }
+
 .barna_modalbox {
   position: fixed;
   top: 0px;
@@ -2354,13 +2675,16 @@ a:focus {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .barna_modalbox.opened {
   opacity: 1;
   visibility: visible;
 }
+
 .barna_modalbox .container {
   height: 100vh;
 }
+
 .barna_modalbox .box_inner {
   position: absolute;
   top: 70px;
@@ -2381,11 +2705,13 @@ a:focus {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .barna_modalbox.opened .box_inner {
   opacity: 1;
   visibility: visible;
   margin-top: 0px;
 }
+
 .barna_modalbox .close {
   position: fixed;
   left: 100%;
@@ -2393,14 +2719,17 @@ a:focus {
   margin-left: 40px;
   z-index: 111111;
 }
+
 .barna_modalbox .close a {
   text-decoration: none;
   color: #fff;
 }
+
 .barna_modalbox .close .svg {
   width: 50px;
   height: 50px;
 }
+
 .barna_modalbox .modal_content {
   position: relative;
   width: 100%;
@@ -2410,6 +2739,7 @@ a:focus {
   padding: 50px;
   overflow-y: scroll;
 }
+
 .hidden_information {
   opacity: 0;
   visibility: hidden;
@@ -2417,17 +2747,20 @@ a:focus {
   z-index: -11;
   display: none;
 }
+
 .barna_modalbox .image {
   position: relative;
   max-height: 450px;
   margin-bottom: 50px;
   overflow: hidden;
 }
+
 .barna_modalbox .image img {
   position: relative;
   min-width: 100%;
   opacity: 0;
 }
+
 .barna_modalbox .image .main {
   position: absolute;
   top: 0px;
@@ -2438,25 +2771,30 @@ a:focus {
   background-position: center;
   background-size: cover;
 }
+
 .barna_modalbox h3 {
   font-size: 23px;
   font-weight: 700;
   margin-bottom: 30px;
 }
+
 .barna_modalbox p {
   margin-bottom: 30px;
   text-align: justify;
 }
+
 .barna_modalbox .in_list {
   width: 100%;
   float: left;
   margin-bottom: 30px;
   padding-left: 20px;
 }
+
 .barna_modalbox .in_list ul {
   margin: 0px;
   list-style-type: none;
 }
+
 .barna_modalbox .in_list ul li {
   margin: 0px 0px 15px 0px;
   width: 100%;
@@ -2464,6 +2802,7 @@ a:focus {
   position: relative;
   padding-left: 20px;
 }
+
 .barna_modalbox .in_list ul li:before {
   position: absolute;
   content: "";
@@ -2474,23 +2813,29 @@ a:focus {
   left: 0px;
   top: 13px;
 }
+
 .barna_modalbox .in_list ul li:last-child {
   margin-bottom: 0px;
 }
+
 .barna_modalbox .in_list ul li p {
   margin-bottom: 0px;
 }
+
 .barna_prevnext.disabled {
   opacity: 0.5;
 }
+
 .barna_prevnext .next,
 .barna_prevnext .prev {
   float: right;
   position: relative;
 }
+
 .barna_prevnext .prev {
   margin-right: 20px;
 }
+
 .barna_prevnext a {
   text-decoration: none;
   display: block;
@@ -2507,16 +2852,20 @@ a:focus {
   padding-bottom: 11px;
   overflow: hidden;
 }
+
 .barna_prevnext .prev a {
   text-align: left;
 }
+
 .barna_prevnext .next a {
   text-align: right;
 }
+
 .barna_prevnext a:hover {
   color: var(--pc);
   border-color: var(--pc);
 }
+
 .barna_prevnext a:after {
   width: 100%;
   bottom: 0;
@@ -2526,6 +2875,7 @@ a:focus {
   background-color: #7e7e7e;
   transition: all 0.3s 0.3s ease;
 }
+
 .barna_prevnext a:before {
   margin: 0;
   padding: 0;
@@ -2539,68 +2889,86 @@ a:focus {
   transition: all 0.3s ease;
   opacity: 0;
 }
+
 .barna_prevnext a:hover:before {
   width: 100%;
   opacity: 1;
   transition: all 0.3s 0.3s ease;
 }
+
 .barna_prevnext a:hover:after {
   width: 0;
   opacity: 0;
   transition: all 0.3s ease;
 }
+
 .barna_prevnext .next a:after {
   right: 0;
 }
+
 .barna_prevnext .next a:before {
   left: 0;
 }
+
 .barna_prevnext .prev a:after {
   left: 0;
 }
+
 .barna_prevnext .prev a:before {
   right: 0;
 }
+
 .barna_modalbox .modal_content::-webkit-scrollbar {
   width: 11px;
 }
+
 .barna_modalbox .modal_content {
   scrollbar-width: thin;
   scrollbar-color: #333 #111;
 }
+
 .barna_modalbox .modal_content::-webkit-scrollbar-track {
   background: #111;
 }
+
 .barna_modalbox .modal_content::-webkit-scrollbar-thumb {
   background-color: #333;
   border-radius: 6px;
   border: 3px solid #111;
 }
+
 @media (max-width: 1200px) {
   .barna_modalbox.opened .box_inner {
     width: 600px;
   }
+
   .barna_modalbox .close {
     margin-left: 20px;
   }
+
   .barna_modalbox .modal_content {
     padding: 30px;
   }
 }
+
 @media (max-width: 768px) {
   .barna__hero .my__nav a {
     display: none;
   }
+
   .barna__title h3 {
     font-size: 30px;
   }
+
   .barna_modalbox .close {
     background-color: #111319;
   }
+
   .barna_modalbox.opened .box_inner {
     width: 500px;
     width: 88vw;
   }
+
   .barna_modalbox .close a {
     width: 30px;
     height: 30px;
@@ -2609,6 +2977,7 @@ a:focus {
     position: relative;
     background-color: #000;
   }
+
   .barna_modalbox .close a:after {
     content: "";
     position: absolute;
@@ -2619,6 +2988,7 @@ a:focus {
     top: 14px;
     left: 5px;
   }
+
   .barna_modalbox .close a:before {
     content: "";
     position: absolute;
@@ -2629,9 +2999,11 @@ a:focus {
     top: 14px;
     left: 5px;
   }
+
   .barna_modalbox .close .svg {
     display: none;
   }
+
   .barna_modalbox .close {
     left: auto;
     right: 20px;
@@ -2640,9 +3012,11 @@ a:focus {
     background-color: #fff;
     border-radius: 3px;
   }
+
   #footer .widgets {
     padding: 100px 0 45px;
   }
+
   #contact,
   #news,
   #testimonials,
@@ -2650,20 +3024,44 @@ a:focus {
   #skills {
     padding: 100px 0;
   }
+
   #portfolio {
     padding: 100px 0 70px;
   }
+
   #services {
     padding: 100px 0 50px;
   }
+
   #resume {
     padding: 100px 0 71px;
     background-color: #01011a;
   }
+
   #about {
     padding-bottom: 100px;
   }
+
   .barna__resume_list .item h3 {
     font-size: 24px;
   }
+}
+
+@media only screen and (max-width: 1100px) {
+  .logo {
+    width: 100px !important;
+  }
+  
+
+}
+.barna__hero .bg2 {
+  right: -150%;
+}
+
+@media only screen and (min-width: 1100px) {
+  .barna__hero .bg2 {
+    width: 69%;
+    right: -69%;
+  }
+  
 }
